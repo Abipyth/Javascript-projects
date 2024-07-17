@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POPUP</title>
+</head>
+<style>
+    .overlay{
+        background-color: black;
+        width: 80%;
+        height: 60%;
+        position: absolute;
+        top: 100px;
+        left: 150px;
+        opacity:0.7;
+        z-index: 1;
+        display: none;
+    }
+    .popupbox{
+        position: absolute;
+        z-index: 2;
+        background-color: white;
+        color: black;
+        width: 40%;
+        padding: 20px;
+        border-radius: 10px;
+        left: 30%;
+        display: none;
+        top:230px
+    }
+</style>
+<body>
+
+    <button onclick="show()">SHOW</button>
+    <div class="overlay"></div>
+    <div class="popupbox">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ad delectus a rem dicta enim. Rem, quia eius laudantium sint aut fuga porro quae nihil inventore reiciendis. Voluptatum, qui et.</p>
+        <button onclick="closepop()">CLOSE</button>
+    </div>
+    
+</body>
+</html>
+
+
+<script>
+           //selecting overlay and popupbox
+           var overlay=document.querySelector(".overlay")
+        var popupbox=document.querySelector(".popupbox")
+    function show(){
+        popupbox.style.display="block"
+        overlay.style.display="block"
+    }
+    function closepop(){
+        popupbox.style.display="none"
+        overlay.style.display="none" 
+    }
+</script>

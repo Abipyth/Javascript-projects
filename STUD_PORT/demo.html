@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<center><h1>STUDENT FORM</h1>
+
+    <table border="3" class="form_table">
+<form action="">
+        <tr>
+            <th>
+                Name
+            </th>
+            <td>
+                <input type="text" id="namee" placeholder="Enter Name">
+            </td>
+        </tr>
+        <tr>
+            <th>
+                Age
+            </th>
+            <td>
+                <input type="text" id="age" placeholder="Enter Age">
+            </td>
+        </tr>
+        <tr>
+            <th>
+                Gender
+            </th>
+            <td>
+                <input type="text" id="gen" placeholder="Enter Gender">
+            </td>
+        </tr>
+        <tr>
+            <th>
+                Email
+            </th>
+            <td>
+                <input type="email" id="mail" placeholder="Enter Email">
+            </td>
+        </tr>
+        <tr>
+            <th>
+                Course
+            </th>
+            <td>
+                <select id="crse">
+                    <option value="" disabled selected>Select Course</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" >
+               <center><button id="save" onclick="save_data(event)">SAVE</button></center> 
+            </td>
+        </tr>
+    </form>
+ 
+    </table>
+
+    <h1>STUDENT DETAILS STORED HERE</h1>
+
+    <table border="3" class="save_table">
+        <tr class="save_table_tr">
+            <th>NAme</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Email</th>
+            <th>Course</th>
+            <th>Action</th>
+        </tr>
+ 
+
+    </table>
+
+</center>
+
+
+
+<script src="demo.js"></script>
+</body>
